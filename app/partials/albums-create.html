@@ -1,0 +1,24 @@
+<ng-include src="'/partials/header.html'"></ng-include>
+<div class="container">
+    <form class="album-create-form" name="createForm" novalidate>
+        <label for="title">Название</label>
+        <input id="title" name="title" ng-model="new.newAlbum.title" required/>
+
+        <label for="description">Описание</label>
+        <textarea id="description" name="description" ng-model="new.newAlbum.description"></textarea>
+        <button class="grey-button" type="submit" ng-click="new.createNew(new.newAlbum)">Добавить</button>
+    </form>
+    <div class="primary-photo-list-wrapper">
+        <ul class="primary-photo-list">
+            <li class="primary-photo-item" ng-repeat="primary_photo in new.primaryPhotos">
+                <input style="float:left;" type="checkbox" type="checkbox"
+                       ng-click="new.selectPhoto(primary_photo)"
+                       ng-model="primary_photo.checked"/>
+                <img ng-src="{{primary_photo.thumbnail}}"/>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container" style="background: darkgray" ng-hide="new.loadComplete">
+
+</div>

@@ -1,0 +1,4 @@
+.idea
+*.iml
+app/bower_components
+node_modules

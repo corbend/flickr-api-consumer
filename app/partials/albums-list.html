@@ -1,0 +1,18 @@
+<ng-include src="'/partials/header.html'"></ng-include>
+<div class="container album-list-container" ng-show="albums.loadComplete">
+    <span class="service-title">{{albums.getServiceName()}}</span>
+    <h3>Альбомы</h3>
+    <button class="grey-button add-new-button"><a ng-href="/#albums/create">Новый альбом</a></button>
+    <ul class="ttable album-list">
+        <li class="all-items"><a ng-href=""></a></li>
+        <li class="tcell album-list-item" ng-repeat="item in albums.items">
+            <a ng-click="albums.selectAlbum(item)" ng-href="/#albums/{{item.id}}/photos">
+                {{item.name}}
+            </a>
+            <span>{{item.photo.length}}</span>
+        </li>
+    </ul>
+</div>
+<div class="container" style="background: darkgray" ng-hide="albums.loadComplete">
+
+</div>

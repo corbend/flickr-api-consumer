@@ -1,0 +1,21 @@
+<ng-include src="'/partials/header.html'"></ng-include>
+<div class="container photo-list-container" ng-show="photos.loadComplete">
+    <h3 class="container-title">Альбом <strong><a>{{photos.album.name}}</a></strong> - Фотографии</h3>
+    <div class="photo-list-wrapper">
+        <ul class="photo-list">
+            <li class="photo-list-item" ng-repeat="item in photos.items">
+                <img ng-src="{{item.thumbnail}}"/>
+                <a href="#/albums/{{photos.album.id}}/photos/{{item.id}}">Увеличить</a>
+            </li>
+        </ul>
+    </div>
+    <form id="upload-form" name="form" ng-controller="PhotoUploadController as upload" method="POST" enctype="multipart/form-data" novalidate>
+        <div class="button file-select" ngf-select ng-model="file" name="file" ngf-pattern="'image/*'"
+             accept="image/*" ngf-max-size="20MB" ngf-min-height="100"
+             ngf-required>Выберите фото</div>
+        <button ng-disabled="form.$invalid" class="nice-button upload-button" type="submit" ng-click="upload.addNew()">Добавить фотографию</button>
+    </form>
+</div>
+<div class="container" style="background: darkgray" ng-hide="photos.loadComplete">
+
+</div>

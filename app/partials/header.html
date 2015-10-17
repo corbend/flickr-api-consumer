@@ -1,0 +1,5 @@
+<header class="nice-header" ng-controller="LoginController as user">
+    <button class="grey-button pull-left" ng-click="backToHistory()">Back</button>
+    <button class="logout-button grey-button pull-right" ng-click="user.logoutMe()">Logout</button>
+    <span class="username"> Здравствуйте, {{user.username}}</span>
+</header>

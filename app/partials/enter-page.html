@@ -1,0 +1,15 @@
+<ng-include src="'/partials/header.html'"></ng-include>
+<div class="container list-container">
+    <h1 style="text-align: center;">Авторизация в сервисах</h1>
+    <ul class="service-list">
+        <li class="service-item" ng-repeat="service in login.services">
+            <img ng-src="{{service.icon_url}}" ng-class="{'auth-complete': service.authComplete}"/>
+            <h4 ng-click="login.authWithService(service)" class="service-title-label">{{service.name}}</h4>
+            <div ng-show="service.authComplete">
+                <button class="grey-button service-content-button">
+                    <a ng-href="{{service.admin_page_url}}">Посмотреть</a>
+                </button>
+            </div>
+        </li>
+    </ul>
+</div>

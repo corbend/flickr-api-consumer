@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>ImageViewer</title>
+        <meta name="description" content="">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="bower_components/hello/dist/hello.all.js"></script>
+        <script src="bower_components/ng-file-upload/ng-file-upload-all.min.js"></script>
+        <script src="bower_components/oauth-signature/dist/oauth-signature.js"></script>
+        <script src="app.js"></script>
+        <script src="services/AuthService.js"></script>
+        <script src="services/PhotoAlbumsService.js"></script>
+        <script src="services/PhotosService.js"></script>
+        <script src="services/LogoutDecorator.js"></script>
+        <script src="controllers/LoginController.js"></script>
+        <script src="controllers/PhotoAlbumController.js"></script>
+        <script src="controllers/PhotoAlbumCreateController.js"></script>
+        <script src="controllers/PhotosListController.js"></script>
+        <script src="controllers/PhotoFrameController.js"></script>
+        <script src="controllers/PhotoUploadController.js"></script>
+        <!--<script src="controllers/PhotoUploadController.js"></script>-->
+    </head>
+
+    <body ng-app="ImageViewer">
+
+        <div class="wrapper">
+            <div class="breadcrumbs">{{currentPath}}</div>
+            <div class="top-container" style="height: 100%" ng-view></div>
+        </div>
+
+    </body>
+</html>

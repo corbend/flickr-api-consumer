@@ -1,0 +1,364 @@
+body {
+    font-family: Tahoma sans-serif;
+    font-size: 20px;
+    min-width: 768px;
+    overflow: hidden;
+}
+
+.wrapper {
+    text-align: center;
+    max-width: 100%;
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 15px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.panel {
+    float: left;
+    border: 1px solid darkgrey;
+    background-color: lightgrey;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+button.nice-button {
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 800;
+    border: 1px solid green;
+    color: green;
+    display: inline-block;
+    background-color: lightgreen;
+    padding: 10px 15px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+form label {
+    float: left;
+    margin-bottom: 10px;
+}
+
+form input {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    width: 100%;
+    min-height: 100px;
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: inset 0 0 5px lightblue;
+}
+
+form button {
+    float: right;
+    clear: both;
+}
+
+.album-create-form {
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid darkgrey;
+}
+
+.primary-photo-list {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    padding: 20px 0;
+    border: 1px solid darkgray;
+}
+
+.primary-photo-item {
+    padding: 20px;
+    float: left;
+}
+
+.primary-photo-list img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    float: left;
+}
+
+.colm-1 {
+    width: 8.9%;
+}
+
+.colm-2 {
+    width: 18.9%;
+}
+
+.colm-8 {
+    width: 77.9%;
+}
+
+html, body {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+header.nice-header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: grey;
+}
+
+header .username {
+    margin-top: 10px;
+    color: white;
+    display: block;
+    float: right;
+}
+
+.container {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ddd;
+    padding: 20px;
+}
+
+.container-title {
+    display: block;
+    height: 40px;
+    border-bottom: 1px solid darkgrey;
+    margin-bottom: 20px;
+}
+
+.container-float {
+    width: 100%;
+    float: left;
+    padding: 20px;
+    background: #ddd;
+    margin-top: 45px;
+    margin-left: -20px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.grey-button {
+    font-size: 1.3em;
+    width: 200px;
+    padding: 4px 20px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.service-title {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    font-size: 1.3em;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+.list-container {
+    display: inline-block;
+}
+
+.service-list {
+
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+    box-shadow: 0 0 10px darkgrey;
+}
+
+.service-item {
+    color:  cornflowerblue;
+    font-size: 1.5em;
+    float: left;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid darkmagenta;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.service-item img:hover {
+    margin-left: 40px;
+}
+
+.service-item img {
+    transition: margin-left 0.3s ease;
+    margin-left: 20px;
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.service-item img.auth-complete {
+    opacity: 1;
+}
+
+.service-title {
+    float: left;
+}
+
+.service-title-label {
+    float: left;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.service-content-button {
+    font-size: 0.5em;
+    float: right;
+    margin-right: 20px;
+    margin-top: 0px;
+    width: auto;
+}
+
+.album-list {
+    width: 100%;
+    padding: 20px 0;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.album-list-item {
+    margin-left: 10px;
+    border-left: 5px solid white;
+}
+
+.album-list-item a {
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+}
+
+.add-new-button {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.tcell {
+    display: table-cell;
+}
+
+.ttable {
+    display: table;
+}
+
+.album-list .tcell:nth-child(1) {
+    width: 200px;
+}
+
+.photo-list-wrapper {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.primary-photo-list-wrapper {
+    position: absolute;
+    top: 320px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.photo-list {
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.photo-list-item {
+    max-width: 400px;
+    padding: 0 20px;
+}
+
+.photo-list-item img {
+    border: 1px solid grey;
+}
+
+.file-select {
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    float: left;
+    border: 1px solid #aaa;
+    max-width: 200px;
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: linear-gradient(#ccc 0%, #eee 50%, #eee 50%, #ccc 100%)
+}
+
+.file-select:hover {
+    border: 1px solid darkgray;
+    box-shadow: inset 0 0 10px darkgray, inset 0 0 2px white;
+}
+
+.full-screen-image {
+    width: 100%;
+}
+
+.photo-title {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+button.upload-button {
+    float: right;
+    margin-top: -46px;
+}
